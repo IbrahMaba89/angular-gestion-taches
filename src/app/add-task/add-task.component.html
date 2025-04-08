@@ -1,0 +1,16 @@
+<!-- src/app/add-task/add-task.component.html -->
+<div class="task-form">
+  <label for="task">Task</label>
+  <input id="task" type="text" [(ngModel)]="text" name="text" placeholder="Add Task">
+
+  <label for="day">Day & Time</label>
+  <input id="day" type="text" [(ngModel)]="day" name="day" placeholder="Add Day & Time">
+
+  <div>
+    <label>
+      <input type="checkbox" [(ngModel)]="reminder" name="reminder"> Set Reminder
+    </label>
+  </div>
+
+  <button (click)="onSubmit()">Save Task</button>
+</div>

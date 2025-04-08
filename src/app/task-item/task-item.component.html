@@ -1,0 +1,17 @@
+<div class="task-item" [ngClass]="{ 'reminder': task.reminder, 'completed': task.completed }">
+  <div *ngIf="!isEditing">
+    <h3>{{ task.text }}</h3>
+    <p>{{ task.day }}</p>
+    <button (click)="onEdit(task)">Modifier</button>
+    <button (click)="onComplete(task)">Marquer comme Terminé</button>
+    <button (click)="onDelete(task)">Supprimer</button>
+  </div>
+  
+  <div *ngIf="isEditing" class="edit-form">
+    <input [(ngModel)]="editedText" placeholder="Modifier la tâche" />
+    <input [(ngModel)]="editedDay" placeholder="Modifier la date et l'heure" />
+    <button (click)="saveEdit(task)">Sauvegarder</button>
+    <button (click)="isEditing = false">Annuler</button>
+  </div>
+</div>
+

@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.task-buttons input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+*/
+
+/* styles.css */
+
+/* Style général des boutons */
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Bouton Marquer comme terminé - Jaune */
+.yellow-btn {
+  background-color: yellow;
+  color: black; /* Contraste pour une meilleure lisibilité */
+}
+
+/* Bouton Modifier - Vert */
+.green-btn {
+  background-color: green;
+}
+
+/* Bouton Supprimer - Rouge */
+.red-btn {
+  background-color: red;
+}
+
+
+
+
+

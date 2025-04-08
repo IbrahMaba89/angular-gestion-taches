@@ -1,0 +1,20 @@
+<div *ngIf="tasks.length > 0"> <!-- Les tâches s'affichent seulement si la liste n'est pas vide -->
+  <div *ngFor="let task of tasks" class="task-item" [ngClass]="{ 'completed': task.completed }">
+    <div class="task-details">
+      <strong>{{ task.text }}</strong><br>
+      <small>{{ task.day }}</small>
+    </div>
+    
+    <!-- Boutons d'action affichés seulement si des tâches existent -->
+    <div class="task-buttons">
+      <input type="checkbox" (change)="toggleComplete(task)" [checked]="task.completed"> Set Reminder
+      <button class="complete-btn" (click)="toggleComplete(task)">✔️</button>
+      <button class="edit-btn" (click)="editTask(task)">Modifier</button>
+      <button class="delete-btn" (click)="deleteTask(task)">Supprimer</button>
+    </div>
+  </div>
+</div>
+
+
+
+

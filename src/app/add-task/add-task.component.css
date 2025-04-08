@@ -1,0 +1,57 @@
+/* src/app/add-task/add-task.component.css */
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: auto;
+}
+
+.task-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.task-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.task-form input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.task-form input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.task-form button:active {
+  transform: scale(0.98);
+}
